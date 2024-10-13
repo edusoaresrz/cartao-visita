@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --Amarelo: hsl(47, 88%, 63%);
+    --Cinza500: hsl(0, 0%, 42%);
+    --Cinza900: hsl(0, 0%, 7%);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    background-color: var(--Amarelo);
+}
+
+main p {
+    font-size: 12px;
+}
+
+.cartao-visita {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    background-color: white;
+    width: 327px;
+    height: 501px;
+    padding: 24px;
+    box-shadow: 8px 8px 0px var(--Cinza900);
+    border-radius: 20px;
+
+    font-family: "Figtree", sans-serif;
+}
+
+.div-imagem {
+    width: 279px;
+    height: 200px;
+}
+
+.div-imagem img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.conteudo .caixa-texto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--Amarelo);
+    width: 73px;
+    height: 26px;
+    padding: 8px;
+    border-radius: 4px;  
+}
+
+.conteudo .caixa-texto p {
+    font-weight: 900;
+    color: var(--Cinza900);
+}
+
+.conteudo .publicacao {
+    color: var(--Cinza900);
+}
+
+.conteudo h1 {
+    font-size: 20px;
+    font-weight: 900;
+    color: var(--Cinza900);
+}
+
+.conteudo h1:hover {
+    color: var(--Amarelo);
+    cursor: pointer;
+}
+
+.conteudo .descricao {
+    color: var(--Cinza500);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5rem;
+}
+
+.autor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+
+    width: 129px;
+    height: 32;  
+}
+
+.autor p {
+    font-size: 14px;
+    font-weight: 900;
+    color: var(--Cinza900);
+}
+
+.autor img {
+    width: 32px;
+    height: 32px;
+}
