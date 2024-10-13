@@ -94,11 +94,6 @@ main p {
     color: var(--Cinza900);
 }
 
-.conteudo h1:hover {
-    color: var(--Amarelo);
-    cursor: pointer;
-}
-
 .conteudo .descricao {
     color: var(--Cinza500);
     font-weight: 500;
