@@ -14,13 +14,18 @@
     box-sizing: border-box;
 }
 
+body {
+    height: 100vh;
+    background-color: var(--Amarelo);
+}
+
 main {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 
-    height: 100vh;
-    background-color: var(--Amarelo);
+    height: 100%;
 }
 
 main p {
@@ -30,11 +35,10 @@ main p {
 .cartao-visita {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    flex-wrap: wrap;
 
     background-color: white;
     width: 327px;
-    height: 501px;
     padding: 24px;
     box-shadow: 8px 8px 0px var(--Cinza900);
     border-radius: 20px;
@@ -44,11 +48,14 @@ main p {
 
 .div-imagem {
     width: 279px;
-    height: 200px;
+    height: auto;
+    margin-bottom: 24px;
 }
 
 .div-imagem img {
     width: 100%;
+
+    object-fit: contain;
     border-radius: 10px;
 }
 
@@ -56,6 +63,8 @@ main p {
     display: flex;
     flex-direction: column;
     gap: 12px;
+
+    margin-bottom: 24px;
 }
 
 .conteudo .caixa-texto {
@@ -100,7 +109,6 @@ main p {
 .autor {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     gap: 12px;
 
